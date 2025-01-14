@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  @font-face {
+    font-family: 'RyderDirty';
+    font-style: normal;
+    font-weight: 100;
+    src: url('./fonts/ryder_dirty.ttf') format('truetype');
+  }
+  html {
+    font-family: 'RyderDirty', sans-serif; /* Fallback to sans-serif if font fails to load */
+  }
+}
