@@ -3,13 +3,13 @@ export function FaqSection() {
     return (
         <section className="bg-inherit">
             <div className="mx-auto px-6 max-w-screen-xl sm:py-6 lg:px-6">
-                <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-gray-200 dark:text-white">Häufige Fragen</h2>
+                <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-gray-200 dark:text-white">FAQ</h2>
                 <div className="grid pt-2 text-left md:gap-16 dark:border-gray-700 md:grid-cols-2">
                     <div>
                         <div className="mb-10">
                             <h3 className="flex items-center mb-4 text-lg font-medium text-gray-200 dark:text-white">
                                 <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-300 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd"></path></svg>
-                                What do you mean by "Figma assets"?
+                                WANN geht es los?
                             </h3>
                             <p className="text-gray-300 font-mono">Am 31. Mai 2025 ist es endlich soweit: Das Seti Gathering öffnet seine Tore und verspricht ein unvergessliches Erlebnis voller Musik, Kunst und Gemeinschaft. Damit jeder die Chance hat, dabei zu sein, haben wir unser Vorverkaufs-System in drei Phasen unterteilt.</p>
                         </div>
