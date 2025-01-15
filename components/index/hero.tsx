@@ -15,7 +15,7 @@ export default function HeroSection() {
             <div>
               <div>
                 <div className="text-4xl break-words font-bold sm:text-center sm:text-7xl text-white">
-                  SETI - Gathering 2025
+                
                 </div>
                 
               </div>

@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Container from "../components/container/container"
+import Container from "../components/container/container2"
 import HeroSection from "../components/index/hero"
 import CookieConsent from "react-cookie-consent";
 import { FaqSection } from "../components/index/faq";
