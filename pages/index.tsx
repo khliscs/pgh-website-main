@@ -39,7 +39,7 @@ export default function Index() {
           <HeroSection />
         </div >
         <FaqSection />
-        <ImageSection />
+      
         <ContactSection />
         <MapsSection />
       </Container>
