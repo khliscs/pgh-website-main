@@ -37,7 +37,7 @@ export default function Index() {
         </CookieConsent>
         <div className="bg-inherit" style={{ marginTop: "22rem", marginBottom: "7rem" }}>
           <HeroSection />
-        </div>
+        </div >
         <FaqSection />
         <ImageSection />
         <ContactSection />

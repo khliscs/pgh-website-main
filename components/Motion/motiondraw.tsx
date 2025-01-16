@@ -7,11 +7,11 @@ const draw = {
     visible: (i: number) => {
         const delay = i * 0.3;
         return {
-            pathLength: 1,
+            pathLength: 2,
             opacity: 1,
             transition: {
-                pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
-                opacity: { delay, duration: 0.5 },
+                pathLength: { delay, type: "spring", duration: 5, bounce: 2 },
+                opacity: { delay, duration: 6.5 },
             },
         };
     },
@@ -20,13 +20,13 @@ const draw = {
 export default function CustomPatternSVG() {
     return (
         <motion.svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1000"
-            height="1000"
-            viewBox="0 0 800 800"
-            initial="hidden"
-            animate="visible"
-            style={svgStyle}
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid slice" 
+        viewBox="0 0 800 800"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 10 }}
+        transition={{ duration: 30 }}
+        style={svgStyle}
         >
 
             {/* Pfad 2 */}
@@ -38,6 +38,20 @@ export default function CustomPatternSVG() {
                 fill="none"
                 variants={draw}
                 custom={1}
+
+                animate={{
+                    opacity: [0.5, 1, 0.5], // Fading in and out
+                    x: [0, randomOffset(), 0], // Slight random movement in X-axis
+                    y: [0, randomOffset(), 0], // Slight random movement in Y-axis
+                }}
+                transition={{
+                    duration: 10, // Total duration for one cycle
+                    repeat: Infinity, // Infinite loop
+                    repeatType: "reverse", // Smooth back-and-forth animation
+                    ease: "easeInOut", // Smooth easing
+                }}
+
+                
             />
 
             {/* Kreis */}
@@ -50,6 +64,10 @@ export default function CustomPatternSVG() {
  */
 
 const svgStyle: React.CSSProperties = {
-    maxWidth: "100%",
-    height: "auto",
-};
+    width: "100%",      
+    height: "100%",       
+     }
+
+function randomOffset() {
+        return Math.random() * 20 - 5; // Generate a random value between -5 and 5
+    }
